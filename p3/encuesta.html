@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Compusport</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/materialize.css">-->
+  </head>
+
+<body class="body-color">
+  <header>
+    <div class="header">
+      <div id="logo"><img src="https://cdn.pixabay.com/photo/2015/11/03/08/54/sport-1019776_960_720.jpg" width="250" height="250"></img></div>
+      <div id="titulo"><h1> CompuSport Hiper mega red </h1></div>
+    </div>
+  </header>
+  <br clear="both"/>
+  <div>
+    <nav  name="pg-navbar">
+      <ul>
+        <li onmouseover=mouseSobre(this) onmouseout=mouseSobre(this)><a href="index.html">Mouses</a></li>
+        <li onmouseover=mouseSobre(this) onmouseout=mouseSobre(this)><a href="teclados.html">Teclados</a></li>
+        <li onmouseover=mouseSobre(this) onmouseout=mouseSobre(this)><a href="encuesta.html">Encuesta</a></li>
+      </ul>
+    </nav>
+    <div name="contenido" align="center">
+      <form method="post" id="form">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" value="" required>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" value="" id="apellido" required>
+        <label for="fnac">Fecha de nacimiento:</label>
+        <input type="calendar" name="fnacimiento" value="" id="fnac" required>
+        <label for="">Sexo</label>
+        <input class="checkb" type="radio" name="sexo" value="masculino">Masculino</input>
+        <input class="checkb" type="radio" name="sexo" value="femenino">Femenino</input>
+        <label for="">Valoracion</label>
+        <input class="checkb" type="radio" name="valoracion" value="buena">Buena</input>
+        <input class="checkb" type="radio" name="valoracion" value="regular">Regular</input>
+        <input class="checkb" type="radio" name="valoracion" value="mala">Mala</input>
+        <button type="submit" name="enviar" onclick="return validarForm()">Enviar</button>
+        <button type="button" name="cancelar" onclick="retuen canc()">Cancelar</button>
+        <button type="button" name="restblecer" onclick="return restablecer()">Restablecer</button>
+      </form>
+    </div>
+  </div>
+  <footer class="pg-footer">
+    <h5 align="center">konito 2001</h5>
+  </footer>
+  <script type="text/javascript" src="js/script.js">
+
+  </script>
+</body>
+
+</html>
